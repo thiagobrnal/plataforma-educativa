@@ -19,6 +19,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api/user")
+@PreAuthorize("hasRole('ADMINISTRADOR')")
 public class UserController {
 
     @Autowired
